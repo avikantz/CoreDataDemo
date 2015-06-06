@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  TableViewController.h
 //  CoreDataDemo
 //
 //  Created by Avikant Saini on 6/5/15.
@@ -7,9 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CoreData/CoreData.h>
 
-@interface ViewController : UIViewController
-
+@interface TableViewController : UITableViewController
 
 @end
-

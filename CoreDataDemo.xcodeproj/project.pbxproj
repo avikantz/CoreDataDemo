@@ -10,11 +10,13 @@
 		59792DC61B219BEE0085A90E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 59792DC51B219BEE0085A90E /* main.m */; };
 		59792DC91B219BEE0085A90E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 59792DC81B219BEE0085A90E /* AppDelegate.m */; };
 		59792DCC1B219BEE0085A90E /* CoreDataDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 59792DCA1B219BEE0085A90E /* CoreDataDemo.xcdatamodeld */; };
-		59792DCF1B219BEE0085A90E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59792DCE1B219BEE0085A90E /* ViewController.m */; };
 		59792DD21B219BEE0085A90E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59792DD01B219BEE0085A90E /* Main.storyboard */; };
 		59792DD41B219BEE0085A90E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59792DD31B219BEE0085A90E /* Images.xcassets */; };
 		59792DD71B219BEE0085A90E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59792DD51B219BEE0085A90E /* LaunchScreen.xib */; };
 		59792DE31B219BEE0085A90E /* CoreDataDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 59792DE21B219BEE0085A90E /* CoreDataDemoTests.m */; };
+		59792DEE1B219D090085A90E /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59792DED1B219D090085A90E /* TableViewController.m */; };
+		59792DF11B219D170085A90E /* AddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59792DF01B219D170085A90E /* AddViewController.m */; };
+		59792DF41B219D230085A90E /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 59792DF31B219D230085A90E /* TableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,14 +36,18 @@
 		59792DC71B219BEE0085A90E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		59792DC81B219BEE0085A90E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		59792DCB1B219BEE0085A90E /* CoreDataDemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataDemo.xcdatamodel; sourceTree = "<group>"; };
-		59792DCD1B219BEE0085A90E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		59792DCE1B219BEE0085A90E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		59792DD11B219BEE0085A90E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		59792DD31B219BEE0085A90E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		59792DD61B219BEE0085A90E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		59792DDC1B219BEE0085A90E /* CoreDataDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreDataDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		59792DE11B219BEE0085A90E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		59792DE21B219BEE0085A90E /* CoreDataDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreDataDemoTests.m; sourceTree = "<group>"; };
+		59792DEC1B219D090085A90E /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		59792DED1B219D090085A90E /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		59792DEF1B219D170085A90E /* AddViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddViewController.h; sourceTree = "<group>"; };
+		59792DF01B219D170085A90E /* AddViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddViewController.m; sourceTree = "<group>"; };
+		59792DF21B219D230085A90E /* TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
+		59792DF31B219D230085A90E /* TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,8 +91,12 @@
 			children = (
 				59792DC71B219BEE0085A90E /* AppDelegate.h */,
 				59792DC81B219BEE0085A90E /* AppDelegate.m */,
-				59792DCD1B219BEE0085A90E /* ViewController.h */,
-				59792DCE1B219BEE0085A90E /* ViewController.m */,
+				59792DEC1B219D090085A90E /* TableViewController.h */,
+				59792DED1B219D090085A90E /* TableViewController.m */,
+				59792DF21B219D230085A90E /* TableViewCell.h */,
+				59792DF31B219D230085A90E /* TableViewCell.m */,
+				59792DEF1B219D170085A90E /* AddViewController.h */,
+				59792DF01B219D170085A90E /* AddViewController.m */,
 				59792DD01B219BEE0085A90E /* Main.storyboard */,
 				59792DD31B219BEE0085A90E /* Images.xcassets */,
 				59792DD51B219BEE0085A90E /* LaunchScreen.xib */,
@@ -222,10 +232,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59792DF11B219D170085A90E /* AddViewController.m in Sources */,
+				59792DF41B219D230085A90E /* TableViewCell.m in Sources */,
 				59792DC91B219BEE0085A90E /* AppDelegate.m in Sources */,
 				59792DCC1B219BEE0085A90E /* CoreDataDemo.xcdatamodeld in Sources */,
-				59792DCF1B219BEE0085A90E /* ViewController.m in Sources */,
 				59792DC61B219BEE0085A90E /* main.m in Sources */,
+				59792DEE1B219D090085A90E /* TableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
